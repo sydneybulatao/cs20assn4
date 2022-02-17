@@ -1,0 +1,15 @@
+- prompt:
+    1) how many Hotdogs, numDogs
+    2) how many fries, numFries
+    3) hot many sodas, numSodas
+-  convert all to floats 
+- multiply each value by prices and add up to get sum, subtotal
+- if subtotal > 20, discount = subtotal*0.1
+    - subtotal = subtotal - discount 
+- tax = subtotal*0.0625 
+- total = subtotal + tax 
+- output all totals and quantities 
+
+NOTES:
+- currency values rounded to 2 decimal places 
+

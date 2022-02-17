@@ -1,0 +1,26 @@
+@font-face{font-family: "Meow Script";
+src: url("./fonts/MeowScript-Regular.ttf");}
+
+@font-face{font-family: "Bebas Neue";
+src: url("./fonts/BebasNeue-Regular.ttf");}
+
+body,html {background-color: #FFDEAD; color: #000; font-family: "Bebas Neue",
+           sans-serif; font-size: 30px;}
+h1 {font-family: "Meow Script", cursive; font-size: 75px; color: #C1292E;
+    display: inline-block;}
+h2 {color: #C1292E; font-family: "Bebas Neue", sans-serif; font-size: 40px;
+    display: inline-block;}
+h3 {color: #000; font-family: "Bebas Neue", sans-serif; font-size: 30px;
+    border-color: #C1292E; border-style: solid; border-width: 4px;
+    display: inline;}
+
+#header {position: fixed; top: 45px; text-align: center; display: block;
+         width: 100%; background-color: #FFEFD6; height: 155px;}
+#footer {font-size: 16px; background-color: #FFEFD6; width:100%; padding: 3px;
+         height: 45px; bottom: 0; position: fixed;} 
+#main {margin-top: 205px;}
+.row {width: 100%;}
+.column {float: left; width: 33%;}
+.responsive {width: 100%; max-width: 400x; height: auto;}
+
+

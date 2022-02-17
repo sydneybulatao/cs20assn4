@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Joe's Hotdog Stand</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./icons/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen and (max-width:750px)" href="handheld.css"/>
+</head>
+<body>
+    <!-- Header -->
+    <div id=header>
+        <img src="./icons/hotdog.png" alt="Hot Dog Icon"
+        class=responsive style="max-width: 64px;">
+        <h1>Joe's Hotdogs</h1>
+        &nbsp;
+        <img src="./icons/food-stall.png" alt="Hot Dog Stand Icon"
+        class=responsive style="max-width: 64px;">
+    </div> 
+    <br />
+    <!-- End of Header -->
+    
+    <!-- Main Section -->
+    <div id=main>
+        <img src="./icons/fast-food.png" alt="Fast Food Icon"
+        class=responsive style="max-width: 45px;">
+        <h2>Your Order:</h2>
+        <br />
+        
+        <script language="javascript">
+            numDogs = prompt("How many hotdogs would you like?","");
+            numFries = prompt("How many orders of fries would you like?","");
+            numSodas = prompt("How many sodas would you like?","");
+            
+            numDogs = parseFloat(numDogs);
+            numFries = parseFloat(numFries);
+            numSodas = parseFloat(numSodas);
+
+            document.write("<div class=row>");
+            // Order Summary            
+            document.write("<div class=column>"
+                           +numDogs+" hotdog(s)<br />"
+                           +numFries+" order(s) of fries<br />"
+                           +numSodas+" soda(s)</div>");
+            // End of Order Summary
+            
+            subtotal = (((numDogs*3.75)+(numFries*2.00)+(numSodas*1.80)).toFixed(2));
+            
+            // Totals 
+            document.write("<div class=column>
+                            Subtotal: $"+subtotal+"<br />");
+            
+            if (subtotal >= 20) 
+            {
+                discount = ((subtotal*0.10).toFixed(2));
+                subtotal = ((subtotal-discount).toFixed(2));
+                document.write("Discount: -$"+discount+"<br />");
+                document.write("New Subtotal: $"+subtotal+"<br />");
+            }
+            
+            tax = ((subtotal*0.0625).toFixed(2));
+            document.write("Tax: $"+tax+"<br />");
+            
+            total = ((+subtotal + +tax).toFixed(2));
+            document.write("<h3>Total: $"+total+"</h3></div>");
+            // End of Totals
+        </script>
+        
+        <!-- Menu -->
+        <div class="column" style="background-color: #FFEFD6;">
+            <img src="./icons/soda.png" alt="Soda Icon"
+            class=responsive style="max-width: 45px;">
+            <h2>Our Menu:</h2>
+            <br />
+            Hotdog: $3.75
+            <br />
+            Fries: $2.00
+            <br />
+            Soda: $1.80
+        </div>
+        <!-- End of Menu -->
+        </div>
+    </div>
+    <!-- End of Main Section -->
+    
+    <!-- Footer -->
+    <div id="footer">
+        <div style="font-size: 15px; position: absolute; right: 15px;">
+            Icons by <a target="_blank" href="https://icons8.com">Icons8</a>
+        </div>
+    </div>
+    <!-- End of Footer -->
+</body>
+</html>
