@@ -11,7 +11,7 @@ h2 {color: #C1292E; font-family: "Bebas Neue", sans-serif; font-size: 5vw;}
 h3 {color: #000; font-family: "Bebas Neue", sans-serif; font-size: 5vw;
     border-color: #C1292E; border-style: solid; border-width: 4px;
     display: inline;}
-a.button {color: #000; font-family: "Bebas Neue", sans-serif; font-size: 7vw;
+a.button {color: #000; font-family: "Bebas Neue", sans-serif; font-size: 5vw;
    display: inline; background-color: #C1292E; text-decoration: none;
    border-color: #630c0f; border-style: solid; border-width: 4px;}
 a:hover.button {background-color: #CF6165}
