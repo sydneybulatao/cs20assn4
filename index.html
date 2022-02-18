@@ -3,6 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>Joe's Hotdog Stand</title>
+    <!-- Internal Style Sheet -->
+    <style type="text/css">
+        @media (max-width: 750px) {.no-mobile {display: none}}
+    </style>
+    <!-- End of Style Sheet -->
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./icons/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,11 +17,11 @@
     <!-- Header -->
     <div id=header>
         <img src="./icons/hotdog.png" alt="Hot Dog Icon"
-        class=responsive style="max-width: 64px;">
+        class="responsive no-mobile" style="max-width: 64px;">
         <h1>Joe's Hotdogs</h1>
         &nbsp;
         <img src="./icons/food-stall.png" alt="Hot Dog Stand Icon"
-        class=responsive style="max-width: 64px;">
+        class="responsive no-mobile" style="max-width: 64px;">
     </div> 
     <br />
     <!-- End of Header -->
@@ -62,9 +67,12 @@
             document.write("Tax: $"+tax+"<br />");
             
             total = ((+subtotal + +tax).toFixed(2));
-            document.write("<h3>Total: $"+total+"</h3></div>");
-            // End of Totals
+            document.write("<h3>Total: $"+total+"</h3>");
         </script>
+        <br /><br />
+        <a href="submit.html" class="button">Place Order</a>
+        </div>
+        <!-- End of Totals -->
         
         <!-- Menu -->
         <div class="column" style="background-color: #FFEFD6;">
